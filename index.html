@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Brainy Child Montessori Preschool in Vastral, Ahmedabad - Quality early childhood education using Montessori methods">
+    <title>Brainy Child Montessori Preschool | Vastral, Ahmedabad</title>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #FF6B6B;
+            --secondary: #4ECDC4;
+            --accent: #FFD166;
+            --dark: #6A4C93;
+            --light: #F8F9FA;
+            --white: #FFFFFF;
+            --shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Bubblegum Sans', cursive, sans-serif;
+            overflow-x: hidden;
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+            color: var(--white);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .rainbow-text {
+            background-image: linear-gradient(to right, #ff8a00, #e52e71, #2af598, #4364f7, #b06ab3);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow 6s linear infinite;
+            background-size: 400% 100%;
+            font-weight: bold;
+        }
+
+        @keyframes rainbow {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        /* Cloud Animation */
+        .cloud {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            animation: float 20s infinite linear;
+            z-index: 0;
+        }
+
+        /* @keyframes float {
+            0% {
+                transform: translateX(-100px);
+            }
+
+            50% {
+                transform: translateX(calc(100vw + 100px));
+            }
+
+            100% {
+                transform: translateX(-100px);
+            }
+        } */
+
+        /* Section Styling */
+        .section {
+            padding: 5rem 0;
+        }
+
+        /* Card Styling */
+        .card {
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background: linear-gradient(45deg, var(--primary), var(--dark));
+            border: none;
+            padding: 0.75rem 1.875rem;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(45deg, var(--dark), var(--primary));
+        }
+
+        /* Montessori Elements */
+        .montessori-element {
+            background-color: var(--white);
+            padding: 1.25rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 1.25rem;
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 3rem 0 1rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .section {
+                padding: 3rem 0;
+            }
+
+            .hero {
+                padding: 80px 0;
+            }
+
+            .display-4 {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Accessibility improvements */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Logo.png" alt="Brainy Child Montessori Logo" height="60" style="transform: scale(1); ">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#facilities">Facilities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#admission">Admission</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- <div class="moving-clouds">
+            <div class="cloud cloud-1"
+                style="width: 100px; height: 60px; top: 10%; left: 10%; animation-duration: 35s;"></div>
+            <div class="cloud cloud-2"
+                style="width: 140px; height: 80px; top: 30%; right: 15%; animation-duration: 45s;"></div>
+            <div class="cloud cloud-3"
+                style="width: 80px; height: 50px; bottom: 20%; left: 20%; animation-duration: 30s;"></div>
+        </div> -->
+        <div class="container hero-content text-center">
+            <img src="Logo.png" alt="Brainy Child Logo" class="img-fluid mb-4"
+                style="max-width: 300px;" data-aos="zoom-in">
+            <div data-aos="fade-up" data-aos-delay="400">
+                <a href="#admission" class="btn btn-primary btn-lg me-3">Admission Open 2024-25</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Montessori Section -->
+    <section class="section bg-light" id="about">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-4" data-aos="fade-up">
+                        What is <span class="rainbow-text">Montessori?</span>
+                    </h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                        The Montessori method is a child-centered approach to education developed by Dr. Maria
+                        Montessori that values the human spirit and full development of every child.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="montessori-element">
+                        <i class="fas fa-home fa-3x mb-3" style="color: var(--primary);" aria-hidden="true"></i>
+                        <h3>Prepared Environment</h3>
+                        <p>Carefully designed spaces that support natural development through exploration and discovery.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="montessori-element">
+                        <i class="fas fa-puzzle-piece fa-3x mb-3" style="color: var(--primary);" aria-hidden="true"></i>
+                        <h3>Unique Materials</h3>
+                        <p>Scientifically designed learning materials that isolate concepts and allow for hands-on
+                            learning.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="montessori-element">
+                        <i class="fas fa-user-clock fa-3x mb-3" style="color: var(--primary);" aria-hidden="true"></i>
+                        <h3>Individually Paced</h3>
+                        <p>Each child works at their own pace, following their natural curiosity and interests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="section" id="programs" style="background-color: #f0f7fa;">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold mb-4">Our <span class="rainbow-text">Programs</span></h2>
+                    <p class="lead mb-4">Our curriculum is carefully designed to nurture your child's natural curiosity
+                        and love for learning.</p>
+
+                    <div class="d-flex flex-column">
+                        <div class="program-level" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-baby me-2" aria-hidden="true"></i> Playgroup (1.5-2.5 years)
+                        </div>
+                        <div class="program-level" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-child me-2" aria-hidden="true"></i> Nursery (2.5-3.5 years)
+                        </div>
+                        <div class="program-level" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-book-reader me-2" aria-hidden="true"></i> Junior KG (3.5-4.5 years)
+                        </div>
+                        <div class="program-level" data-aos="fade-up" data-aos-delay="500">
+                            <i class="fas fa-graduation-cap me-2" aria-hidden="true"></i> Senior KG (4.5-5.5 years)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="photo2.jpg" alt="Children learning in classroom" class="img-fluid rounded-4 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="section bg-white" id="facilities">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-4" data-aos="fade-up">
+                        Our <span class="rainbow-text">Facilities</span>
+                    </h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                        We provide a rich learning environment with modern facilities designed for children's
+                        development.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center">
+                        <div class="bg-light rounded-3 p-4 mb-3 d-inline-block">
+                            <i class="fas fa-shapes fa-3x" style="color: var(--primary);"></i>
+                        </div>
+                        <h5>Montessori Lab</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center">
+                        <div class="bg-light rounded-3 p-4 mb-3 d-inline-block">
+                            <i class="fas fa-running fa-3x" style="color: var(--primary);"></i>
+                        </div>
+                        <h5>Toddlers Gym</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-center">
+                        <div class="bg-light rounded-3 p-4 mb-3 d-inline-block">
+                            <i class="fas fa-brain fa-3x" style="color: var(--primary);"></i>
+                        </div>
+                        <h5>Brain Lab</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="text-center">
+                        <div class="bg-light rounded-3 p-4 mb-3 d-inline-block">
+                            <i class="fas fa-gamepad fa-3x" style="color: var(--primary);"></i>
+                        </div>
+                        <h5>Fun Zone</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Section -->
+    <section class="section" id="admission" style="background-color: #f0f7fa;">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-4" data-aos="fade-up">
+                        <span class="rainbow-text">Admission</span> Open
+                    </h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                        Enrollments for 2024-2025 academic year are now open! Limited seats available.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <img src="photo1.jpg" alt="Happy children at preschool" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="card">
+                        <div class="card-header text-center text-white"
+                            style="background: linear-gradient(45deg, var(--primary), var(--dark));">
+                            <h3 class="mb-0">Enroll Your Child Today</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text mb-4">
+                                Brainy Child Montessori is the perfect place for your child to learn and grow. Contact
+                                us to schedule a visit!
+                            </p>
+                            <div class="d-grid gap-2">
+                                <a href="#contact" class="btn btn-primary">Contact for Admission</a>
+                                <a href="tel:+919824884715" class="btn btn-outline-primary">Call Now: +91 98248
+                                    84715</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section bg-white" id="contact">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-4" data-aos="fade-up">
+                        Get in <span class="rainbow-text">Touch</span>
+                    </h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                        We'd love to hear from you! Reach out to schedule a visit or learn more about our programs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="bg-white p-4 rounded-4 shadow">
+                        <form id="contactForm" method="post" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name *</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Contact Information</h3>
+
+                            <div class="d-flex mb-4">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5>Address</h5>
+                                    <address>
+                                        A-32, Tejendra Bunglows,<br>
+                                        Nr Kankubaug Mall, Nirant Cross Road<br>
+                                        Vastral, Ahmedabad - 382418
+                                    </address>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mb-4">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-phone fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5>Phone</h5>
+                                    <p>
+                                        <a href="tel:+919824884715">+91 98248 84715</a><br>
+                                        <a href="tel:+919824884815">+91 98248 84815</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-envelope fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5>Email</h5>
+                                    <p>
+                                        <a href="mailto:Brainychilda@gmail.com">Brainychilda@gmail.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="images/logo-white.png" alt="Brainy Child Logo" class="mb-3" style="max-width: 200px;">
+                    <p>Education Got A New Address</p>
+                    <p>Powered by Kreedo Early Childhood Solutions</p>
+
+                    <div class="mt-4">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none">About Montessori</a>
+                        </li>
+                        <li class="mb-2"><a href="#programs" class="text-white text-decoration-none">Our Programs</a>
+                        </li>
+                        <li class="mb-2"><a href="#facilities" class="text-white text-decoration-none">Facilities</a>
+                        </li>
+                        <li class="mb-2"><a href="#admission" class="text-white text-decoration-none">Admission</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5>Opening Hours</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Monday - Friday: 8:00 AM - 6:00 PM</li>
+                        <li class="mb-2">Saturday: 9:00 AM - 1:00 PM</li>
+                        <li class="mb-2">Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-light opacity-25">
+
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Brainy Child Montessori Preschool. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        // Initialize AOS animation
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true,
+                offset: 100
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Form submission handler
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    // Simple validation
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const phone = document.getElementById('phone').value.trim();
+                    const message = document.getElementById('message').value.trim();
+
+                    if (!name || !email || !phone || !message) {
+                        alert('Please fill in all required fields.');
+                        return;
+                    }
+
+                    // Here you would typically send the form data to a server
+                    // For demo purposes, we'll just show a success message
+                    alert('Thank you for your message! We will contact you soon.');
+                    contactForm.reset();
+                });
+            }
+
+            // Add shadow to navbar on scroll
+            window.addEventListener('scroll', function () {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('shadow');
+                } else {
+                    navbar.classList.remove('shadow');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
